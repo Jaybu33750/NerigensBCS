@@ -59,6 +59,7 @@ body {
     display: flex;
     gap: 20px;
     width: 100%;
+    align-items: flex-start;
 }
 
 .card {
@@ -69,6 +70,10 @@ body {
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#card-right {
+  overflow-y: auto; /* scrollbar vertical si contenu dépasse */
 }
 
 .card:first-child {
