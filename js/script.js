@@ -351,8 +351,11 @@ window.addEventListener('resize', () =>{
 
 document.addEventListener("DOMContentLoaded", function () {
   if (window.matchMedia("(max-width: 768px)").matches) {
+    alert("vous êtes sur mobile");
     const container = document.querySelector(".main-content");
     container.scrollLeft = 0; // Toujours afficher la card de gauche d'abord
+  }else{
+    alert("vous êtes sur PC");
   }
 });
 
