@@ -1,0 +1,20 @@
+{
+  "year": 2025,
+  "month": 9,
+  "monthName": "septembre",
+  "defaultWeekly": {
+    "0": [],
+    "1": [],
+    "2": [],
+    "3": [{"start": "16h00", "end": "20h00"}],
+    "4": [],
+    "5": [{"start": "16h00", "end": "22h00"}],
+    "6": [{"start": "10h30", "end": "12h30"},{"start": "18h00", "end": "22h00"}]
+  },
+  "specificDates": {
+    
+  },
+  "events": [
+    
+  ]
+}

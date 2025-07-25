@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerigens BCS - Horaires & Animations</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="scroll-wrapper">
+        <div class="container container-header"> <!-- Création du bandeau d'en-tête -->
+            <h1 class="header-title"> <!-- Création du titre -->
+            Nerigens BCS - Agenda
+            </h1>
+        </div>
+
+        <div class="container container-content">
+            <div class="month-navigation-bar">
+                <div id="currentStatus" class="status-indicator closed-status"> <!-- Création de l'indicateur de status -->
+                    <span class="status-dot"></span>
+                    <span>Fermé</span>
+                </div>
+                <div class="month-controls">
+                    <button class="nav-button" onclick="changeMonth(-1)">‹</button>
+                    <div class = "month-wrapper">
+                        <div class="current-month" id="currentMonth"></div>
+                    </div>
+                    <button class="nav-button" onclick="changeMonth(1)">›</button>
+                </div>    
+            </div>
+            
+            <div class="main-content">
+                <div id="card-left" class="card">
+                    <div class="calendar-grid" id="calendarGrid">
+                        <div class="day-header">Lun</div>
+                        <div class="day-header">Mar</div>
+                        <div class="day-header">Mer</div>
+                        <div class="day-header">Jeu</div>
+                        <div class="day-header">Ven</div>
+                        <div class="day-header">Sam</div>
+                        <div class="day-header">Dim</div>
+                    </div>
+                </div>
+
+                <div id="card-right" class="card">
+                    <div id="events">
+                        <div class="event">
+                            <div class event-header>
+                                <div class="event-date">(Défaut) Mercredi 9 Juillet</div>
+                                <div class="event-time">21h00 - 01h00</div>
+                            </div>
+                            <div class="event-title">🎵 Soirée Karaoké</div>
+                            <div class="event-description">Venez chanter vos tubes préférés ! Ambiance garantie avec DJ Marco.</div>
+                        </div>
+                        
+                        <div class="event">
+                            <div class= "event-header">
+                                <div class="event-date">(Défaut) Vendredi 11 Juillet</div>
+                                <div class="event-time">19h00 - 22h00</div>
+                            </div>
+                            <div class="event-title">🏆 Tournoi de Baby-foot</div>
+                            <div class="event-description">Tournoi en équipe de 2. Inscription sur place. Prix pour les vainqueurs !</div>
+                        </div>
+                        
+                        <div class="event">
+                            <div class= "event-header">
+                                <div class="event-date">(Défaut) Dimanche 20 Juillet</div>
+                                <div class="event-time">10h30 - 15h00</div>
+                            </div>
+                            <div class="event-title">🍻 Brunch</div>
+                            <div class="event-description">Découverte de 5 bières locales avec présentation du brasseur.</div>
+                        </div>
+                        
+                        <div class="event">
+                            <div class= "event-header">
+                                <div class="event-date">(Défaut) Lundi 28 juillet</div>
+                                <div class="event-time">18h30 - 20h30</div>
+                            </div>
+                            <div class="event-title">🎭 Commission Bar</div>
+                            <div class="event-description">La troupe "Les Improvisateurs" vous propose un spectacle interactif.</div>
+                        </div>
+
+                        <div class="event">
+                            <div class= "event-header">
+                                <div class="event-date">(Défaut) Jeudi 31 Juillet</div>
+                                <div class="event-time">19h30 - 22h00</div>
+                            </div>
+                            <div class="event-title">🍻 Dégustation de bières artisanales</div>
+                            <div class="event-description">Découverte de 5 bières locales avec présentation du brasseur.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Chargement du script externe -->
+    <script src="js/script.js"></script>
+</body>
+</html>
